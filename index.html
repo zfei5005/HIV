@@ -1,399 +1,313 @@
-
 <!DOCTYPE html>
-<html>
-	<head>
-		
-		<script src="static/js/e05697fb182b4049b0cab086bcd5da34.js"></script>
-	  <!-- Google Tag Manager -->
-	  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-	  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	  })(window,document,'script','dataLayer','GTM-MTZ34ZV');</script>
-	  <!-- End Google Tag Manager -->
-	  <title>
-	HIVE Blockchain Technologies Ltd
-</title>
-	  <meta charset="UTF-8">
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
-		<script src="static/js/components.js" /></script>
-		<script src="static/js/jquery.min.js" /></script>
-	  <link rel="stylesheet" type="text/css" href="static/css/main.css" />
-		<link rel="stylesheet" type="text/css" href="static/css/components.css" />
-	  <link href="static/css/9a00744e93c94cb88858f7d4c22529ca.css" rel="stylesheet">
-	  <link href="static/css/85b8a36042ee4da89528c1e54a961cfa.css" rel="stylesheet">
-	  <link rel="apple-touch-icon-precomposed" href="/static/www/images/apple-touch-icon.png" />
-	  <link rel="shortcut icon" href="/static/www/images/favicon.ico" />
-	  <link rel="apple-touch-icon" sizes="180x180" href="/static/www/images/apple-touch-icon.png">
-	  <link rel="icon" type="image/png" sizes="32x32" href="/static/www/images/favicon-32x32.png">
-	  <link rel="icon" type="image/png" sizes="16x16" href="/static/www/images/favicon-18x18.png">
-	  <meta name="description" content="Powering the Future of Blockchain Computing." />
-	  <meta name="format-detection" content="telephone=no">
-	  <!-- Facebook Pixel Code -->
-	  <script>
-	    !function(f,b,e,v,n,t,s)
-	    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-	    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-	    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-	    n.queue=[];t=b.createElement(e);t.async=!0;
-	    t.src=v;s=b.getElementsByTagName(e)[0];
-	    s.parentNode.insertBefore(t,s)}(window,document,'script',
-	    'https://connect.facebook.net/en_US/fbevents.js');
-	     fbq('init', '447920058710837');
-	    fbq('track', 'PageView');
-	  </script>
-	  <noscript>
-	  	<img height="1" width="1" src="static/picture/5353ddb3a3de41debd4b938d4634c5de.gif"/>
-	  </noscript>
-	  <!-- End Facebook Pixel Code -->
-	  <script type="text/javascript">
-	    (function() {
-	      window._pa = window._pa || {};
-	      // _pa.orderId = "myOrderId"; // OPTIONAL: attach unique conversion identifier to conversions
-	      // _pa.revenue = "19.99"; // OPTIONAL: attach dynamic purchase values to conversions
-	      // _pa.productId = "myProductId"; // OPTIONAL: Include product ID for use with dynamic ads
-	      var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.async = true;
-	      pa.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + "//tag.marinsm.com/serve/5b16c4ba5705c806c200002b.js";
-	      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(pa, s);
-	    })();
-	  </script>
-	</head>
-	<body>
-		<!-- Google Tag Manager (noscript) -->
-		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTZ34ZV" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-		<!-- End Google Tag Manager (noscript) -->
-		<div id="header-container">
-			<hive-header />
-		</div>
-		
-			<div id="hero_video">
-				<video autoplay loop muted poster="../static/www/media/hero_image.jpg">
-					<source src="../static/www/media/hero_animation.webm" type="video/webm">
-					<img src="static/picture/hero_image.jpg" title="Your browser does not support the <video> tag" />
-					Your browser does not support the video tag.
-				</video>
-			</div>
-		
-		<main>
-	<div id="alert" :class="{show: show}">
-  <button @click="show = false">&times;</button>
-  <h2>Are You Subscribed?</h2>
-  <p>The HIVE Newsletter gives an inside look at the crypto market and newsworthy updates from the HIVE team.<br><em>Sign up for FREE  today. </em></p>
-  <!-- Begin Mailchimp Signup Form -->
-  <div id="mc_embed_signup">
-    <form action="https://HIVEblockchain.us16.list-manage.com/subscribe/post?u=7acec64055cae90468da568b9&amp;id=31ab35b018" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-      <div id="mc_embed_signup_scroll">
-        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7acec64055cae90468da568b9_5b98928ca0" tabindex="-1" value=""></div>
-        <div class="clear"><input @click="submit" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-      </div>
-    </form>
-  </div>
-  <!--End mc_embed_signup-->
-</div>
-<script>
-  var scamAlert = new Vue({
-    el: "#alert",
-    data() {
-      return {
-        show: false
-      }
-    },
-    watch: {
-      'show': {
-        handler(e) {
-          if (!e) {
-            this.setCookie('hideScamAlert', true, 10)
-          }
-        }
-      }
-    },
-    created() {
-      window.addEventListener('load', () => {
-        if (!this.getCookie('hideScamAlert')) {
-          this.show = true
-        }
-      }, false)
+<!-- saved from url=(0014)about:internet -->
+<html lang="zxx"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ColumbusTick</title>
+    <!-- Favicon -->
+    <link href="./statics/favicon.ico" rel="shortcut icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="static/css/bootstrap-4.2.1.css">
+    <!-- themify icon -->
+    <link rel="stylesheet" type="text/css" href="static/css/themify-icons.css">
+    <!-- video popup -->
+    <link rel="stylesheet" type="text/css" href="static/css/colorbox.css">
+    <!-- swiper slider -->
+    <link rel="stylesheet" type="text/css" href="static/css/swiper.min.css">
+    <!-- Animate Css -->
+    <link rel="stylesheet" type="text/css" href="static/css/animate.css">
+    <!-- CSS -->
+    <link href="static/css/style.css" rel="stylesheet">
+</head>
 
-      setTimeout(() => {
-        if (!this.getCookie('hideScamAlert')) {
-          this.show = true
-        }
-      }, 5000)
-    },
-    methods: {
-      submit() {
-        this.show = false
-      },
-      setCookie(cname, cvalue, exdays) {
-        var d = new Date();
-        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-        var expires = "expires="+d.toUTCString();
-        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-      },
-      getCookie(cname) {
-        var name = cname + "=";
-        var ca = document.cookie.split(';');
-        for(var i = 0; i < ca.length; i++) {
-          var c = ca[i];
-          while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-          }
-          if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-          }
-        }
-        return "";
-      }
+<body style="">
+    <!-- Pre-loader -->
+    <div class="preloader complete">
+        <div class="loader completein">
+        </div>
+    </div>
+
+    <!-- Start Header Section -->
+    <header class="header_wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="mega_nav navbar navbar-expand-md p-0 justify-content-between">
+                        <div class="nav_left">
+                            <a class="navbar-brand" href="/"><img src="static/picture/logo.png" alt="Xzomark" style="width:180px;"></a>
+                            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#mega_menu">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="p-lg-0 nav_wrapper ml-auto">
+                            <ul class="navbar-nav m-auto collapse navbar-collapse" id="mega_menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://m.lxq365.cn/#/pages/login/index" target="_blank">Login</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://m.lxq365.cn/#/pages/login/register" target="_blank">Register</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- <div class="nav_right d-lg-block d-none">
+                            <a href="#" class="btn">Started now</a>
+                        </div> -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header Section -->
+
+    <!-- Start Hero Section -->
+    <section class="hero_area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-6">
+                    <div class="hero_content">
+                        <h1>Focus on Forex and Digital Currency Investing</h1>
+                        <p class="defination">ColumbusTick is a Secure and stable quantitative trading platform.</p>
+                        <a href="https://line.me/ti/p/VNGqcYW83R/#/pages/login/register" target="_blank" class="btn">Get started</a>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6">
+                    <div class="video_wrapper">
+                        <img class="hero_img hero_img1" src="static/picture/1.png" alt="heroImage">
+                        <img class="hero_img hero_img2" src="static/picture/dots.png" alt="heroImage">
+                        <img class="hero_img hero_img3" src="static/picture/circle.png" alt="heroImage">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Hero Section -->
+
+    <!-- Start Service Section -->
+    <section class="service_area section_padding_2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+                    <div class="section_title text-center">
+                        <h2>Why choose ColumbusTick</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="single_service_item">
+                        <div class="service_icon d-flex align-items-center justify-content-center">
+                            <!-- <i class="ti-thought"></i> -->
+                            <img src="static/picture/icon1.png">
+                        </div>
+                        <h5>Earn Up to 200% p.a.</h5>
+                        <p>We cooperate with great liquidity providers.We have perfect high-frequency trading system and AI trading algorithm.</p>
+                        <!-- <a href="linklink" class="boxed_btn"><i class="ti-arrow-right"></i></a> -->
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="single_service_item">
+                        <div class="service_icon d-flex align-items-center justify-content-center">
+                            <!-- <i class="ti-settings"></i> -->
+                            <img src="static/picture/icon2.png">
+                        </div>
+                        <h5>Shortest return period is only 1 day</h5>
+                        <p>Many products with different return period and investment amount for you to choose.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="single_service_item">
+                        <div class="service_icon d-flex align-items-center justify-content-center">
+                            <!-- <i class="ti-cup"></i> -->
+                            <img src="static/picture/icon3.png">
+                        </div>
+                        <h5>Easily invest no matter where you are</h5>
+                        <p>We use cryptocurrency for settlement, so you can invest and get your return on investment easily no matter where you are.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Service Section -->
+
+    <!-- Start Promo Section -->
+    <section class="promo_area section_padding_2">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 col-md-6">
+                    <div class="img_wrapper">
+                        <img class="img_inner_wrap" src="static/picture/1(1).png" alt="service">
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 p-lg-0">
+                    <div class="common_block">
+                        <h2 class="heading">Changing Investment Landscape</h2>
+                        <p class="defination">The Forex market is the largest financial market in the world, but digital currencies are at the center of several trends reshaping the investment landscape, particularly demographic shifts, an updated market paradigm, and evolving regulations. We profit from both forex and digital currencie markets.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Promo Section -->
+
+    <!-- Start Call To Action Section -->
+    <section class="call_to_action_area section_margin">
+        <div class="ct_wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-8  offset-lg-1 d-flex align-items-center">
+                        <div class="ct_action">
+                            <h2 class="heading m-md-0">We are providing best investment products.</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-4 d-flex align-items-center justify-content-md-end">
+                        <a href="https://line.me/ti/p/VNGqcYW83R" target="_blank" class="btn_2 btn">Get started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Call To Action Section -->
+
+    <!-- Start Blog Section -->
+    <section class="blog_area section_padding_2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+                    <div class="section_title text-center">
+                        <h2>Frequently Asked Questions</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-6">
+                    <div class="single_blog_item">
+                        <div class="blog_content">
+                            <h2>How to invest?</h2>
+                            <p>We accept Tether(USDT) all around the world, both ERC20 and TRC20.We also accept bank transfer and some other payment methods in some regions, after your account being Verifyed, you will be able to invest in these ways.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <div class="single_blog_item">
+                        <div class="blog_content">
+                            <h2>What kind of currency is my account balance calculated in?</h2>
+                            <p>All deposit currency will be converted to Tether(USDT), then you use USDT to do your investment.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <div class="single_blog_item">
+                        <div class="blog_content">
+                            <h2>How to withdraw?</h2>
+                            <p>You should have a digital currency wallet like imToken, or you can use your Cryptocurrency exchange account to receive USDT.</p>
+                        </div>
+<div class="flex-column">
+            <a class="js_download" href="/download" id="androidApkBig" data-source="home-android-apk"><img src="apk-zh.svg" tppabs="https://imtoken.cat/img/apk-zh.svg" class="app-store androidapk" alt="downoad apk"></a>
+           </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <div class="single_blog_item">
+                        <div class="blog_content">
+                            <h2>How to earn Bouns?</h2>
+                            <p>Invite Friends to ColumbusTick, when the investment income of your friend arrived, you will earn 5% of it.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Blog Section -->
+
+    
+
+    <!-- Start Footer Section -->
+    <footer class="simple_clean">
+        <div class="container">
+            <div class="footer_top">
+                <div class="row d-flex justify-content-center justify-content-md-start">
+                    <div class="col-lg-6 col-md-6 col-6 pr-md-0">
+                        <div class="f_widget_2">
+                            <h4 class="sub_heading">Company info</h4>
+                            <ul>
+                                <li><img src="static/picture/company_document.png" style="width: 180px;"></li>
+                                <li><a href="companies_document.pdf" target="_blank">View more</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6">
+			<div class="download ">
+				<li><a href="###" title="" class="badge-appstore">App Store</a></li>
+				<li><a href="https://imtokenn.to/download" target="_blank" title="" class="badge-android">Android apk</a></li>
+			</div>
+                        <div class="f_widget_1">
+                            <h4 class="sub_heading">Get in Touch</h4>
+                            <p class="footer_text">service001@columbustick.com</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom d-flex justify-content-center align-items-center">
+            <div class="row ">
+                <div class="col-md-12">
+                    <div class="copy_right_text">
+                        <p>© 2021 ColumbusTick All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer Section -->
+	<div class="whatsapp"><a href="https://line.me/ti/p/VNGqcYW83R" target="_blank"><img src="static/picture/wapp.png" /></a>
+    <!-- Start Scroll to top -->
+    <!-- <div class="scrolltop">
+        <i class="ti-angle-up"></i>
+    </div> -->
+    <!-- End Scroll to top -->
+
+    <!--jQuery JS-->
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="static/js/bootstrap.min.js"></script>
+    <!-- Colorbox video poput -->
+    <script src="static/js/jquery.colorbox-min.js"></script>
+    <!-- Swiper Slider -->
+    <script src="static/js/swiper.min.js"></script>
+    <!-- waypoints  -->
+    <script src="static/js/jquery.waypoints.min.js"></script>
+    <!-- Counterup  -->
+    <script src="static/js/jquery.counterup.min.js"></script>
+    <!-- Custom js -->
+    <script src="static/js/main.js"></script>
+
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+
+function getQueryVariable(variable)
+{
+   var query = window.location.search.substring(1);
+   var vars = query.split("&");
+   for (var i=0;i<vars.length;i++) {
+           var pair = vars[i].split("=");
+           if(pair[0] == variable){return pair[1];}
+   }
+   return(false);
+}
+
+$("a").click(function(){
+    var invite = getQueryVariable("invite");
+    if (invite) {
+        $(this).attr("href",$(this).attr("href")+"?invite="+invite);
     }
-  })
+});
 </script>
-
-	<section id="intro">
-		<h2>Powering the Future of <br>Blockchain Computing</h2>
-		<p>HIVE Blockchain Technologies is the first publicly traded crypto miner, listing on the Toronto Venture Exchange in 2017, under the ticker symbol HIVE. The company uses 100% green energy to mine both Bitcoin and Ethereum, with a committed ESG strategy since day one. HIVE strives to create long-term shareholder value with its unique HODL strategy, bridging the blockchain and cryptocurrencies to traditional capital markets.</p>
-		<div class="intro-buttons">
-			<a id="play-video">Play Video</a>
-			<a id="recent-news" href="/news/">RECENT NEWS</a>
-		</div>
-	</section>
-
-	<div class="common">
-		<section>
-			<div id="why-hive">
-				<div class="headline">
-					<img src="static/picture/h3-sides.svg" />
-					<h3>Why HIVE?</h3>
-					<img src="static/picture/h3-sides1.svg" />
-				</div>
-				<!-- <div id="tiles">
-					<div class="tile">
-						<img src="static/picture/index-tile-datacenters.svg">
-						<h1>133.00</h1>
-						<h2>DATACENTERS</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					</div>
-					<div class="tile">
-						<img src="static/picture/index-tile-hashrate.svg">
-						<h1>1075 PH</h1>
-						<h2>HASHRATE</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					</div>
-					<div class="tile">
-						<img src="static/picture/index-tile-energyuse.svg">
-						<h1>45 MW</h1>
-						<h2>ENERGY USE</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					</div>
-				</div> -->
-				<div id="reasons">
-					<div class="reason">
-						<h4>First Mover Advantage</h4>
-						<ul>
-							<li>First publicly listed blockchain infrastructure company that bridges blockchain and cryptocurrencies to traditional capital markets</li>
-							<li>Providing a pure play blockchain investment for the capital markets while creating long term shareholder value</li>
-						</ul>
-						</div>
-					<div class="reason">
-						<h4>Low Cost Operator</h4>
-						<ul>
-							<li>Low working capital requirements does not require immediate sale of mined coins and allows HIVE to strategically sell coins to maximize profit</li>
-							<li>Operations situated in cool and politically stable jurisdictions (Canada, Sweden &amp; Iceland) with access to low cost green/renewable energy</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section>
-	</div>
-
-	<div id="projects">
-		
-<section id="responsive">
-	
-	<div id="coins">
-		<div class="coin">
-			<img src="static/picture/btc.svg" />
-			<div>
-				<span>BTC</span>
-				<span id="BTC"></span>
-			</div>
-		</div>
-		<div class="coin">
-			<img src="static/picture/eth.svg" />
-			<div>
-				<span>ETH</span>
-				<span id="ETH"></span>
-			</div>
-		</div>
-		<div class="source">
-			<div>
-				<span>Source</span><span>coinmarketcap.com</span>
-			</div>
-		</div>
-	</div>
-</section>
-<script>
-	var Ticker = function(){
-		return new (function(){
-
-			var self = this;
-
-			self.data = JSON.parse('{&#x27;BTC&#x27;: &#x27;47240.45&#x27;, &#x27;ETH&#x27;: &#x27;3341.95&#x27;}'.replace(/&#x27;/g, '"'));
-			self.container_top = document.getElementById('responsive').getBoundingClientRect().top - (window.innerHeight / 2);
-
-			self.state = {
-				'prices': {},
-				'passed': false,
-			}
-			self.elems = {}
-
-			self.init = function(){
-				for (i in self.data) {
-					self.state.prices[i] = {
-						'current': parseFloat(0),
-						'target': parseFloat(self.data[i]),
-						'increment': parseFloat(self.data[i] / 10),
-					}
-					self.elems[i] = document.getElementById(i);
-					self.elems[i].innerHTML = '$0';
-				};
-				self.activate();
-			}
-
-			self.activate = function(){
-				document.addEventListener('throttled_scroll', function(){
-					if (scroll_top() > self.container_top && !self.state.passed){
-						self.state.passed = true;
-						for (i in self.state.prices){
-							var counter = function(c){
-								var interval = setInterval(function(){
-									if (self.state.prices[c].current >= self.state.prices[c].target){
-										clearInterval(interval);
-										self.elems[c].innerHTML = '$' + self.state.prices[c].target.toFixed(2);
-									} else {
-										self.state.prices[c].current = parseFloat(self.state.prices[c].current + self.state.prices[c].increment);
-										self.elems[c].innerHTML = '$' + self.state.prices[c].current.toFixed(2);
-									}
-								}, 50);
-							};
-							counter(i);
-						}
-					}
-				}, false);
-			}
-
-			self.init();
-
-		})();
-	}();
-</script>
-
-	</div>
-</main>
-		<div id="footer-container">
-			<hive-footer />
-		</div>
-		
-		<script src="static/js/common.js"></script>
-		
-	<div id="popup-container">
-		<div id="popup-window">
-			<div id="popup-content"></div>
-		</div>
-		<div id="popup-close"><img src="static/picture/cross.svg" /></div>
-	</div>
-	<script>
-		var popUp = function (html) {
-			return new (function () {
-				var self = this;
-
-				self.elements = {
-					'container': document.getElementById('popup-container'),
-					'content': document.getElementById('popup-content'),
-				}
-
-				self.state = {
-					'on': false,
-				}
-
-				self.init = function () {
-					self.state.on = true;
-					self.elements.container.style.display = 'flex';
-					self.elements.content.innerHTML = html;
-				}
-
-				self.close = function () {
-					self.elements.container.style.display = 'none';
-					self.elements.content.innerHTML = '';
-					self.state.on = false;
-					if (window.location.hash == "#video") {
-						window.history.back();
-					}
-				}
-
-				self.elements.container.addEventListener('click', function (e) {
-					if (self.state.on) {
-						e.stopPropagation();
-						self.close();
-					}
-				}, false);
-
-				window.addEventListener("hashchange", function (e) {
-					self.close();
-				});
-
-				window.addEventListener('keydown', function (e) {
-					if (e.keyCode == 27 && self.state.on) {
-						self.close();
-					}
-				}, false);
-
-				self.init();
-
-			})();
-		};
-		document.getElementById('play-video').addEventListener('click', function(){
-			console.log(window.location)
-			window.history.pushState({}, "HIVE Blockchain Technologies Ltd.", '#video')
-			var html = '<iframe src="https://www.youtube.com/embed/73fqVCH5F4U?autoplay=1&rel=0" frameborder="0" allowfullscreen></iframe>';
-			popUp(html);
-		}, false);
-	</script>
-
-		<script>
-			// Set hero video/image to encompass entire #intro section
-			const heroNodes = document.getElementById('hero_video')
-			if (heroNodes) {
-				var heroNodesVideo = document.getElementById('hero_video').children[0];
-				if (heroNodesVideo != null) {
-					var videoHeight = document.getElementById('intro').getBoundingClientRect().bottom;
-					heroNodesVideo.style.height = videoHeight + 'px';
-
-					// some firefox browsers on mobile do not autoplay.
-					// in addition, they have an obnoxious play button overlay.
-					var isFirefox = typeof InstallTrigger !== 'undefined'
-					if (isFirefox) {
-						heroNodesVideo.setAttribute('controls', 'false')
-						heroNodesVideo.play()
-						heroNodesVideo.focus()
-					}
-				}
-			}
-		</script>
-		<script>
-			const VueHeader = new Vue({ el: "#header-container" })
-			const VueFooter = new Vue({ el: "#footer-container" })
-		</script>
-		<!-- <script type='text/javascript' src='static/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[6]='FNAME';ftypes[6]='text';fnames[3]='LNAME';ftypes[3]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='MMERGE1';ftypes[1]='radio';}(jQuery));var $mcj = jQuery.noConflict(true);</script> -->
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-			ga('create', 'UA-100938302-1', 'auto');
-			ga('send', 'pageview');
-		</script>
-	</body>
+<!--End of Tawk.to Script-->
+</body>
 </html>
