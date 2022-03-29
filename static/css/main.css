@@ -1,0 +1,2410 @@
+@charset "UTF-8";
+.maxWidth {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 1rem;
+}
+
+.common {
+  width: 100%;
+}
+.common #why-hive {
+  padding: 0 0 3rem 0;
+}
+.common #why-hive #reasons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 20px;
+}
+.common #why-hive #reasons img {
+  float: right;
+}
+.common #why-hive #reasons .reason {
+  width: calc(50% - 20px);
+}
+.common #why-hive #reasons .reason h4 {
+  color: white;
+  font-size: 1.5rem;
+  color: #5cc2ef;
+  margin-bottom: 1rem;
+}
+.common #why-hive #reasons .reason ul {
+  list-style: none;
+}
+.common #why-hive #reasons .reason ul li {
+  padding: 0.8rem 0;
+  color: white;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+.common #why-hive #reasons .reason ul li:last-of-type {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.common #why-hive #reasons .reason:first-of-type h4 {
+  color: #93ced6;
+}
+.common #why-hive #reasons .reason:last-of-type h4 {
+  color: #2d90fd;
+}
+@media screen and (max-width: 820px) {
+  .common #why-hive #reasons {
+    flex-direction: column;
+  }
+  .common #why-hive #reasons .reason {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .common #why-hive #reasons .reason h4 {
+    height: auto;
+    margin-bottom: 1rem;
+  }
+}
+.common .tabs {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: calc(100vw - 20px);
+  height: 50px;
+  padding: 0 10px;
+  margin: 2rem auto;
+  z-index: 99;
+}
+.common .tabs button {
+  flex: 1;
+  width: 50%;
+  max-width: 250px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+  background: none;
+  transition: background 0.25s, color 0.25s;
+  outline: none;
+  cursor: pointer;
+  padding: 0 5px;
+}
+.common .tabs button:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+.common .tabs button:first-of-type {
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 4px 0 0 4px;
+}
+.common .tabs button:last-of-type {
+  border-radius: 0 4px 4px 0;
+}
+.common .tabs button.selected {
+  background: white;
+  color: #043855;
+}
+@media screen and (max-width: 820px) {
+  .common .tabs {
+    display: block;
+    width: 100%;
+  }
+  .common .tabs button {
+    width: 100%;
+    max-width: 100%;
+    display: none;
+    text-align: left;
+    padding: 0 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  .common .tabs button.selected {
+    display: block;
+    background: none;
+    color: white;
+    border-radius: 4px;
+    background-image: url('data:image/svg+xml; utf8, <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="9.192px" height="4.596px" viewBox="0 0 9.192 4.596" style="enable-background:new 0 0 9.192 4.596;" xml:space="preserve"><style type="text/css">.st0{fill:white;}</style><polygon class="st0" points="9.192,0 4.596,4.596 0,0 "/></svg>');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 0.75rem) center;
+  }
+  .common .tabs.clicked button {
+    display: block;
+    background: white;
+    color: #043855;
+    border-radius: 0;
+    border-bottom: 1px solid #f2f2f2;
+  }
+  .common .tabs.clicked button:first-of-type {
+    border-radius: 4px 4px 0 0;
+  }
+  .common .tabs.clicked button:last-of-type {
+    border-radius: 0 0 4px 4px;
+  }
+  .common .tabs.clicked button:hover {
+    background: #f2f2f2;
+  }
+}
+
+.timeline .period {
+  width: 100%;
+  max-width: 900px;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: url("../images/timeline-dots.png");
+  background-repeat: repeat-y;
+  background-position: 218px center;
+  margin: 0 auto;
+}
+.timeline .period:hover .block {
+  background: url("../images/timeline-block-on.png") center center no-repeat, url("../images/timeline-block-bg.png") center center no-repeat;
+  background-size: contain;
+}
+.timeline .period .date, .timeline .period .chapter {
+  font-family: "Share Tech Mono", monospace;
+  color: white;
+  font-size: 1rem;
+  padding: 1rem 0;
+  width: 100px;
+  text-transform: uppercase;
+}
+.timeline .period .block {
+  display: table;
+  width: 180px;
+  height: 67px;
+  margin: 0 10px;
+  transition: background 0.25s;
+  background: url("../images/timeline-block.png") center center no-repeat, url("../images/timeline-block-bg.png") center center no-repeat;
+  background-size: contain;
+}
+.timeline .period .block:before {
+  display: block;
+  height: 1px;
+  border: 1px solid white;
+  width: 139px;
+  background: white;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.timeline .period .info, .timeline .period .teaser {
+  width: calc(100% - 300px);
+  padding: 1rem 0 3rem 0;
+}
+.timeline .period .info .date, .timeline .period .info .chapter, .timeline .period .teaser .date, .timeline .period .teaser .chapter {
+  display: none;
+}
+.timeline .period .info h3, .timeline .period .teaser h3 {
+  font-family: "Share Tech Mono", monospace;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.timeline .period .info p, .timeline .period .teaser p {
+  color: white;
+}
+.timeline .period .info p + p, .timeline .period .teaser p + p {
+  margin-top: 1rem;
+}
+.timeline .period .info a span, .timeline .period .teaser a span {
+  display: inline-block;
+  background: none;
+  border: none;
+  color: #5cc2ef;
+  line-height: inherit;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+.timeline .period .info ul, .timeline .period .teaser ul {
+  margin: 1rem 0 0 0;
+}
+.timeline .period .info ul:empty, .timeline .period .teaser ul:empty {
+  display: none;
+}
+.timeline .period .info ul.table-of-contents, .timeline .period .teaser ul.table-of-contents {
+  list-style: none;
+  color: white;
+}
+.timeline .period .info ul.table-of-contents li, .timeline .period .teaser ul.table-of-contents li {
+  min-height: 45px;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+  transition: background 0.25s;
+}
+.timeline .period .info ul.table-of-contents li a, .timeline .period .teaser ul.table-of-contents li a {
+  color: white;
+  font-size: 0.8rem;
+}
+.timeline .period .info ul.table-of-contents li:before, .timeline .period .teaser ul.table-of-contents li:before {
+  content: "■";
+  color: white;
+  margin-right: 0.75rem;
+  margin-left: 0.25rem;
+  font-size: 0.75rem;
+  line-height: 45px;
+}
+.timeline .period .info ul.table-of-contents li:last-of-type, .timeline .period .teaser ul.table-of-contents li:last-of-type {
+  border-bottom: 0;
+}
+.timeline .period .info ul.table-of-contents li:hover, .timeline .period .teaser ul.table-of-contents li:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.timeline .period .info ul.addendums, .timeline .period .teaser ul.addendums {
+  list-style: none;
+}
+.timeline .period .info ul.addendums li, .timeline .period .teaser ul.addendums li {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2px;
+}
+.timeline .period .info ul.addendums li a, .timeline .period .teaser ul.addendums li a {
+  font-size: 0.8rem;
+  display: table;
+  color: white;
+  width: 100%;
+  min-height: 38px;
+  padding: 0.4rem 0.75rem;
+  background: rgba(255, 255, 255, 0.05);
+  transition: background 0.25s;
+}
+.timeline .period .info ul.addendums li a:hover, .timeline .period .teaser ul.addendums li a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.timeline .period:nth-child(1) .info h3 {
+  color: #93ced6;
+}
+.timeline .period:nth-child(2) .info h3 {
+  color: #5cc2ef;
+}
+.timeline .period:nth-child(3) .info h3 {
+  color: #2d90fd;
+}
+@media screen and (max-width: 650px) {
+  .timeline .period {
+    padding: 0 10px 0 0;
+    background-position: 50px;
+  }
+  .timeline .period .date {
+    display: none;
+  }
+  .timeline .period .block {
+    width: 80px;
+  }
+  .timeline .period .info {
+    width: calc(100% - 100px);
+    padding-top: 5px;
+  }
+  .timeline .period .info .date {
+    display: block;
+    margin: 0;
+    line-height: 1;
+    padding: 0.5rem 0;
+  }
+}
+
+#vrview {
+  width: 100%;
+  height: auto;
+}
+#vrview iframe {
+  width: 100%;
+  height: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Chivo", sans-serif;
+  font-size: 18px;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+  line-height: 1.6;
+  font-weight: 100;
+  color: #555;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #2d90fd;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+}
+
+em {
+  font-size: inherit;
+  color: inherit;
+}
+
+strong {
+  font-size: inherit;
+  font-weight: bold;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+#hero_video {
+  position: absolute;
+  min-width: 100vw;
+  min-height: 100vh;
+  height: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1000;
+  opacity: 0.4;
+}
+#hero_video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+#hero_video video::-webkit-media-controls-start-playback-button {
+  display: none;
+}
+
+section {
+  width: 100%;
+  max-width: 1360px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.table {
+  width: 100%;
+}
+@media screen and (max-width: 820px) {
+  .table {
+    margin-top: 2rem;
+  }
+}
+.table .table-container {
+  width: 100%;
+  height: auto;
+}
+.table .table-container .table-row {
+  width: 100%;
+  padding: 0 5px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  grid-template-rows: 1fr;
+  align-items: flex-start;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.table .table-container .table-row:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+.table .table-container .table-row span {
+  text-align: left;
+  display: block;
+  padding: 0 5px;
+  line-height: 60px;
+  color: white;
+}
+.table .table-container .table-row span::before {
+  display: block;
+  color: white;
+  width: 100%;
+  height: 0;
+  opacity: 0;
+  background: #1e60a4;
+  line-height: 35px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  padding: 0 5px 0 10px;
+  margin: 0 -5px 0 -10px;
+}
+.table .table-container .table-row span:last-of-type:before {
+  padding-right: 10px;
+}
+.table .table-container .table-row:first-of-type span:before {
+  height: 35px;
+  opacity: 1;
+}
+@media screen and (max-width: 1000px) {
+  .table .table-container .table-row {
+    padding: 1rem 5px 0.75rem 5px;
+  }
+  .table .table-container .table-row:first-of-type {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .table .table-container .table-row span {
+    max-width: 50%;
+    line-height: 1.3;
+    margin-bottom: 0.5rem;
+  }
+  .table .table-container .table-row span::before {
+    display: block;
+    background: none;
+    height: auto;
+    opacity: 1;
+    color: #93ced6;
+  }
+}
+
+#map-container {
+  width: 80%;
+  height: 100%;
+  min-height: 300px;
+  display: table;
+  margin: 0 auto;
+  position: relative;
+}
+#map-container #tabs {
+  display: none;
+}
+#map-container #map-legend {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+}
+#map-container #map-legend div {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+}
+#map-container #map-legend div span {
+  transition: opacity 1s;
+}
+#map-container #map-legend div:first-of-type {
+  left: 0;
+  padding: 0 1rem 0 0;
+  text-align: right;
+}
+#map-container #map-legend div:first-of-type span {
+  color: #93ced6;
+}
+#map-container #map-legend div:last-of-type {
+  right: 0;
+  padding: 0 0 0 1rem;
+  text-align: left;
+}
+#map-container #map-legend div:last-of-type span:first-of-type {
+  color: #2d90fd;
+}
+#map-container #map-legend div:last-of-type span:last-of-type {
+  color: #5cc2ef;
+}
+@media screen and (max-width: 540px) {
+  #map-container #map-legend div {
+    position: relative;
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+  #map-container #map-legend div:first-of-type {
+    text-align: left;
+    padding: 0;
+  }
+  #map-container #map-legend div:last-of-type {
+    padding: 0;
+  }
+}
+
+body {
+  padding-top: 300px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,003755+100 */
+  background: #000000;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #000000 0%, #003755 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #000000 0%, #003755 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #000000 0%, #003755 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#003755",GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+}
+@media screen and (max-width: 820px) {
+  body {
+    background-size: 100%;
+    padding-top: 80px;
+  }
+}
+body main {
+  max-width: 100%;
+  overflow-y: visible;
+  overflow-x: hidden;
+}
+body main #intro {
+  padding: 2rem 20px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body main #intro h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 0.5px;
+  background: -webkit-linear-gradient(left, #2d90fd, #93ced6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+body main #intro span {
+  text-align: center;
+  color: white;
+  margin-top: 1rem;
+}
+body main .content {
+  background: white;
+  width: 100%;
+  padding: 5rem;
+  margin-bottom: 1px;
+}
+@media screen and (max-width: 820px) {
+  body main .content {
+    padding: 2rem 20px;
+  }
+}
+body main .content h3 {
+  color: #2d90fd;
+  font-size: 1.5rem;
+}
+body main .content h5 {
+  color: #2d90fd;
+}
+body main .content span {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: #bbb;
+}
+body main .content p {
+  margin: 1rem 0;
+}
+body main .content a.read-more {
+  color: #2d90fd;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+body main .content hr {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  margin: 2rem 0;
+}
+body main .content img {
+  width: auto;
+  max-width: 100%;
+  margin-bottom: 2rem;
+}
+body main .headline {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 78px;
+  margin: 6rem auto 4rem;
+}
+body main .headline img {
+  width: auto;
+  height: 100%;
+  opacity: 0.5;
+}
+body main .headline h3 {
+  min-width: auto;
+  white-space: nowrap;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 1rem;
+  width: auto;
+  word-wrap: normal;
+  word-break: keep-all;
+}
+body main #alert {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: calc(100% - 20px);
+  max-width: 450px;
+  padding: 25px;
+  background: #001622F2;
+  border-radius: 7px;
+  z-index: 10000;
+  transform: translateX(25%);
+  opacity: 0;
+  transition: opacity 0.15s, transform 0.25s ease-in-out;
+}
+body main #alert.show {
+  opacity: 1;
+  transform: translateX(0%);
+}
+body main #alert button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  line-height: 0;
+  border-radius: 15px;
+  cursor: pointer;
+}
+body main #alert button:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+body main #alert h2 {
+  text-transform: uppercase;
+  color: #2d90fd;
+  font-size: 12px;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+body main #alert p {
+  color: white;
+  font-size: 14px;
+}
+body main #alert p a {
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-left: 3px;
+}
+body main #alert #mc_embed_signup_scroll {
+  width: 100%;
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 66% 34%;
+  grid-column-gap: 7px;
+}
+body main #alert #mc_embed_signup_scroll input {
+  border-radius: 3px;
+  height: 46px;
+  border: 0;
+  width: 100%;
+}
+body main #alert #mc_embed_signup_scroll input[type=email] {
+  padding: 10px;
+}
+body main #alert #mc_embed_signup_scroll input[type=submit] {
+  background: #5cc2ef;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 900;
+}
+body main #intro h2 {
+  padding-bottom: 1rem;
+}
+body main #intro p {
+  margin: auto;
+  color: #FFFFFF;
+  text-align: center;
+  width: 60%;
+}
+body main #intro .intro-buttons {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem auto 6rem auto;
+}
+body main #intro .intro-buttons a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 2.5rem;
+  color: white;
+  word-wrap: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  margin: 0 1.5rem;
+}
+body main #intro .intro-buttons a:hover {
+  color: #2d90fd;
+}
+body main #intro .intro-buttons a:before {
+  display: block;
+  content: "";
+  width: 60px;
+  margin-right: 1rem;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: visible;
+  transition: background-image 0.5s;
+}
+body main #intro .intro-buttons #play-video:before {
+  height: 100%;
+  background-image: url("../images/play-video.svg");
+}
+body main #intro .intro-buttons #recent-news:before {
+  height: 100%;
+  background-image: url("../fonts/timeline-recent-news.svg");
+}
+@media screen and (max-width: 1020px) {
+  body main #intro p {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 820px) {
+  body main #intro h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    padding: 5rem 0;
+  }
+}
+@media screen and (max-width: 525px) {
+  body main #intro h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    padding: 5rem 0;
+    text-align: left;
+  }
+  body main #intro h2 br {
+    display: none;
+  }
+  body main #intro p {
+    width: 100%;
+    text-align: left;
+    padding-bottom: 3rem;
+  }
+  body main #intro .intro-buttons {
+    margin: 0 auto 6rem auto;
+    flex-direction: column;
+  }
+  body main #intro .intro-buttons a {
+    margin: 0;
+    padding: 1rem 0;
+    width: 100%;
+    height: 70px;
+    justify-content: flex-start;
+    word-wrap: nowrap;
+    border-top: 1px dotted rgba(255, 255, 255, 0.5);
+  }
+  body main #intro .intro-buttons a:last-of-type {
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+  }
+}
+body main #intro #page-menu {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+}
+body main #intro #page-menu a {
+  text-transform: uppercase;
+  color: white;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  margin: 0 1rem;
+}
+body main #intro #page-menu a:hover {
+  color: #93ced6;
+}
+@media screen and (max-width: 800px) {
+  body main #intro #page-menu {
+    flex-direction: column;
+    margin: 1rem auto;
+  }
+  body main #intro #page-menu a {
+    margin: 1rem 0;
+  }
+}
+body main #responsive h3 {
+  padding: 0 20px;
+  font-size: 2rem;
+  color: #2d90fd;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+body main #responsive p {
+  padding: 0 20px;
+  color: white;
+  font-size: 1.1rem;
+  margin-bottom: 5rem;
+  display: table;
+  width: 50%;
+  float: left;
+}
+@media screen and (max-width: 820px) {
+  body main #responsive p {
+    float: none;
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+body main #responsive #coins {
+  width: 100%;
+  margin: 2.5rem 0;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+body main #responsive #coins .coin {
+  width: 100%;
+  padding: 1rem 0 2rem;
+  border-top: 1px dotted rgba(255, 255, 255, 0.2);
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+  text-align: left;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  justify-content: center;
+  align-items: center;
+}
+body main #responsive #coins .coin:first-child {
+  border-right: 1px dotted rgba(255, 255, 255, 0.2);
+}
+body main #responsive #coins .coin img {
+  min-width: 159px;
+  width: 100%;
+  max-width: 159px;
+  display: block;
+  float: left;
+}
+body main #responsive #coins .coin div {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+body main #responsive #coins .coin div span {
+  width: 100%;
+  display: block;
+  float: right;
+}
+body main #responsive #coins .coin div span:first-of-type {
+  color: #2d90fd;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 70%;
+}
+body main #responsive #coins .coin div span:last-of-type {
+  color: white;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 110%;
+}
+body main #responsive #coins .coin:last-of-type div {
+  width: 100%;
+}
+body main #responsive #coins .coin:last-of-type div span {
+  width: 100%;
+  text-align: center;
+}
+body main #responsive #coins .source {
+  grid-column: 1/3;
+}
+body main #responsive #coins .source div {
+  width: 100%;
+  height: auto;
+  text-align: right;
+  padding: 5px 0;
+}
+body main #responsive #coins .source div span {
+  width: 100%;
+  text-transform: uppercase;
+}
+body main #responsive #coins .source div span:first-of-type {
+  color: #2d90fd;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 70%;
+  margin-right: 6px;
+}
+body main #responsive #coins .source div span:last-of-type {
+  color: white;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 70%;
+}
+body main #tiles {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 8rem;
+}
+body main #tiles .tile {
+  align-items: center;
+  flex-basis: 260px;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+body main #tiles .tile img {
+  width: 24px;
+  height: 24px;
+  display: block;
+  margin: auto;
+}
+body main #tiles .tile h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+  color: #5DADEA;
+  padding-bottom: 0.5rem;
+  padding-top: 0.8rem;
+}
+body main #tiles .tile h2 {
+  font-size: 0.8rem;
+  color: #FFF;
+  opacity: 0.33;
+  padding-bottom: 1.4rem;
+}
+body main #tiles .tile p {
+  font-size: 0.85rem;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 945px) {
+  body main #tiles {
+    flex-direction: column;
+    padding: 0;
+  }
+  body main #tiles .tile {
+    margin-bottom: 1rem;
+    flex-basis: 200px;
+  }
+  body main #tiles .tile h1 {
+    margin: auto;
+  }
+  body main #tiles .tile p {
+    padding-bottom: 1rem;
+  }
+}
+body main .post-preview img {
+  width: auto;
+  height: auto;
+  max-height: 150px;
+}
+body main #news, body main #faq {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 820px) {
+  body main #news, body main #faq {
+    margin-bottom: 0;
+  }
+}
+body main #news ul, body main #news ol, body main #faq ul, body main #faq ol {
+  margin-left: 20px;
+}
+body main #news pre, body main #faq pre {
+  white-space: pre-wrap;
+  /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap;
+  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;
+  /* Opera 4-6 */
+  white-space: -o-pre-wrap;
+  /* Opera 7 */
+  word-wrap: break-word;
+  font-size: 0.7rem;
+}
+body main #news pre em, body main #faq pre em {
+  font-size: 0.7rem;
+}
+body main #news h1, body main #faq h1 {
+  font-size: 1.5rem;
+  padding-top: 100px;
+  margin-top: -80px;
+}
+body main #news h3, body main #faq h3 {
+  padding-top: 90px;
+  margin-top: -90px;
+}
+body main #news #post-nav, body main #faq #post-nav {
+  margin-top: 2rem;
+  border-top: 1px solid #ddd;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+body main #news #post-nav a, body main #faq #post-nav a {
+  width: 50%;
+  height: 100%;
+  padding: 2rem 0.5rem 2rem 0;
+}
+body main #news #post-nav a span:nth-child(1), body main #faq #post-nav a span:nth-child(1) {
+  font-family: "Share Tech Mono", monospace;
+}
+body main #news #post-nav a span:nth-child(2), body main #faq #post-nav a span:nth-child(2) {
+  color: black;
+  font-size: 1rem;
+  width: 100%;
+  display: block;
+}
+body main #news #post-nav a:hover span:nth-child(2), body main #faq #post-nav a:hover span:nth-child(2) {
+  color: #2d90fd;
+}
+body main #news #post-nav a:only-child, body main #faq #post-nav a:only-child {
+  width: 100%;
+}
+body main #news #post-nav a.next, body main #faq #post-nav a.next {
+  text-align: right;
+  border-left: 1px solid #ddd;
+  padding: 2rem 0rem 2rem 0.5rem;
+}
+body main #news #post-nav a.next:only-child, body main #faq #post-nav a.next:only-child {
+  border-left: none;
+}
+@media screen and (max-width: 500px) {
+  body main #news #post-nav, body main #faq #post-nav {
+    flex-direction: column;
+  }
+  body main #news #post-nav a, body main #faq #post-nav a {
+    width: 100%;
+    padding: 1 rem 0;
+  }
+  body main #news #post-nav a span:nth-child(2), body main #faq #post-nav a span:nth-child(2) {
+    font-size: 0.8rem;
+  }
+  body main #news #post-nav a.next, body main #faq #post-nav a.next {
+    border: 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+  body main #news #post-nav a.next:only-child, body main #faq #post-nav a.next:only-child {
+    border-bottom: none;
+    border-top: none;
+  }
+}
+body main .post-menu {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+body main .post-menu span {
+  margin-right: 5px;
+}
+body main .post-menu a {
+  line-height: 1;
+  min-width: 45px;
+  max-width: 45px;
+}
+body main .post-menu a img {
+  width: 100%;
+  margin: 0 !important;
+}
+body main .post-menu .print-ready {
+  display: block;
+  margin-top: 0rem;
+  margin-left: auto;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  line-height: 30px;
+  max-width: none;
+}
+body main .post-menu .print-ready:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  display: block;
+  background-image: url("../fonts/print.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  float: left;
+}
+@media screen and (max-width: 540px) {
+  body main .post-menu .print-ready {
+    font-size: 0;
+  }
+}
+body main #corporate #about-tab, body main #corporate #partners-tab, body main #corporate #governance-tab {
+  display: none;
+  opacity: 0;
+}
+body main #corporate #mission {
+  padding: 0 20px;
+}
+body main #corporate #mission p {
+  text-align: center;
+  background: -webkit-linear-gradient(left, #2d90fd, #93ced6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.75rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 820px) {
+  body main #corporate #mission p {
+    font-size: 1.5rem;
+    margin: 2rem auto 2.5rem 0;
+  }
+}
+body main #corporate #mission #about {
+  margin-top: 2rem;
+}
+body main #corporate #mission #about p {
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  line-height: 1.5;
+  color: white;
+  background: none;
+  text-transform: none;
+  -webkit-background-clip: initial;
+  -webkit-text-fill-color: initial;
+}
+@media screen and (max-width: 820px) {
+  body main #corporate #mission #about p {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+}
+body main #corporate #team {
+  padding: 0 20px 5rem;
+}
+body main #corporate #team .members {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+body main #corporate #team .members .member {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+  justify-content: space-between;
+}
+body main #corporate #team .members .member img {
+  width: 265px;
+  height: 320px;
+  margin-right: 3rem;
+}
+body main #corporate #team .members .member .member-info {
+  width: 100%;
+}
+body main #corporate #team .members .member .member-info h1 {
+  padding-top: 2rem;
+  font-size: 1.2rem;
+  color: #FFFFFF;
+  text-align: left;
+}
+body main #corporate #team .members .member .member-info .member-title {
+  flex-direction: row;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+body main #corporate #team .members .member .member-info .member-title h2 {
+  font-size: 0.8rem;
+  color: #55A6FD;
+  text-transform: uppercase;
+}
+body main #corporate #team .members .member .member-info .member-title div {
+  display: flex;
+  margin-left: 0.25rem;
+}
+body main #corporate #team .members .member .member-info .member-title div a {
+  height: auto;
+  width: 16px;
+  margin-left: 1rem;
+}
+body main #corporate #team .members .member .member-info .member-title div a img {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+body main #corporate #team .members .member .member-info p {
+  margin: 1rem 0;
+  color: white;
+  font-size: 0.8rem;
+  text-align: justify;
+}
+body main #corporate #team .members .member:nth-child(even) img {
+  order: 2;
+  margin-right: 0;
+  margin-left: 3rem;
+}
+body main #corporate #team .members .member:last-child {
+  margin: 0;
+}
+@media screen and (max-width: 1000px) {
+  body main #corporate #team .members .member {
+    padding: 0 2rem;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 735px) {
+  body main #corporate #team .members .member, body main #corporate #team .members .member:nth-child(even) {
+    flex-direction: column;
+  }
+  body main #corporate #team .members .member img, body main #corporate #team .members .member:nth-child(even) img {
+    order: 1;
+    margin: auto;
+  }
+  body main #corporate #team .members .member .member-info, body main #corporate #team .members .member:nth-child(even) .member-info {
+    order: 2;
+  }
+}
+@media screen and (max-width: 500px) {
+  body main #corporate #team .members .member {
+    padding: 0;
+  }
+}
+body main #corporate #team span {
+  display: block;
+  color: white;
+  font-size: 0.8rem;
+  text-align: center;
+  margin: 1rem auto 6rem auto;
+}
+body main #corporate #investors {
+  margin-bottom: 8rem;
+}
+body main #corporate #investors #logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body main #corporate #investors #logos img {
+  width: 40%;
+  max-width: 250px;
+  height: auto;
+  margin: 2rem;
+}
+body main #corporate #investors p {
+  text-align: center;
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  color: white;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+}
+body main #corporate #advisors {
+  margin-bottom: 4rem;
+}
+body main #corporate #advantages {
+  height: 100%;
+  margin-bottom: 100px;
+  padding: 0 20px;
+}
+body main #corporate #advantages .advantage {
+  width: calc(100% - 1rem);
+  height: auto;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 1rem 1rem 0 rgba(0, 0, 0, 0.25);
+  margin-bottom: 1rem;
+  position: relative;
+}
+body main #corporate #advantages .advantage h3 {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white;
+  opacity: 1;
+  position: absolute;
+}
+body main #corporate #advantages .advantage #genesis-hive {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+body main #corporate #advantages .advantage #genesis-hive .img {
+  width: 40%;
+  height: 100%;
+  min-height: 100%;
+  max-height: auto;
+  display: table;
+  float: left;
+  position: relative;
+}
+body main #corporate #advantages .advantage #genesis-hive .img img {
+  position: absolute;
+  min-width: 200px;
+  max-width: 250px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body main #corporate #advantages .advantage #genesis-hive .desc {
+  display: table;
+  height: 100%;
+  width: 60%;
+  float: right;
+  padding: 2rem;
+}
+body main #corporate #advantages .advantage #genesis-hive .desc p {
+  font-size: 1.1rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+body main #corporate #advantages .advantage #genesis-hive .desc p:last-of-type {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 820px) {
+  body main #corporate #advantages {
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+  body main #corporate #advantages .advantage {
+    box-shadow: 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.25);
+    transform: translateX(-2.5px);
+    width: calc(100% - 30px);
+    margin: 0 auto;
+  }
+  body main #corporate #advantages .advantage h3 {
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+  body main #corporate #advantages .advantage #genesis-hive {
+    flex-direction: column;
+  }
+  body main #corporate #advantages .advantage #genesis-hive .img {
+    width: 100%;
+  }
+  body main #corporate #advantages .advantage #genesis-hive .img img {
+    width: 50%;
+    display: block;
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin: 5rem auto 1rem auto;
+  }
+  body main #corporate #advantages .advantage #genesis-hive .desc {
+    width: 100%;
+    padding: 1rem;
+  }
+  body main #corporate #advantages .advantage #genesis-hive .desc p {
+    font-size: 1rem;
+  }
+}
+body main #corporate #hard-soft-green {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 3rem auto;
+  margin-bottom: 100px;
+}
+body main #corporate #hard-soft-green p {
+  width: 100%;
+  color: white;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+  text-align: center;
+  display: block;
+}
+body main #corporate #hard-soft-green .hero-container {
+  width: 30%;
+  max-width: 200px;
+  margin: 0 1rem;
+  position: relative;
+}
+body main #corporate #hard-soft-green .hero-container .hero-white {
+  display: block;
+}
+body main #corporate #hard-soft-green .hero-container .hero-color {
+  display: none;
+  opacity: 0;
+}
+body main #corporate #hard-soft-green .hero-container img {
+  width: 100%;
+  transition: all 1.5s ease;
+}
+body main #corporate #hard-soft-green .hero-container span {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+}
+body main #corporate #governance .table-row {
+  grid-template-columns: 1fr 50px;
+}
+body main #corporate #governance .governance-name:before {
+  content: "Policy";
+}
+body main #corporate #governance .governance-file {
+  text-align: center;
+}
+body main #corporate #governance .governance-file a {
+  height: 20px;
+}
+body main #corporate #governance .governance-file a img {
+  height: 20px;
+}
+body main #corporate #governance .governance-file:before {
+  content: "File";
+}
+body main #projects {
+  position: relative;
+}
+body main #projects #overview-tab, body main #projects #iceland-tab, body main #projects #sweden-tab, body main #projects #norway-tab, body main #projects #canada-tab {
+  opacity: 0;
+  display: none;
+  transition: opacity 0.5s;
+  padding-bottom: 5rem;
+}
+body main #projects #currently-mining {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 6.5rem;
+  left: 50%;
+  text-align: center;
+}
+body main #projects #currently-mining h1 {
+  font-family: "Share Tech Mono";
+  color: #5DADEA;
+}
+body main #projects #currently-mining .mined-currencies {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+body main #projects #currently-mining .mined-currencies .mined-currency {
+  margin: 0 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+body main #projects #currently-mining .mined-currencies .mined-currency img {
+  min-width: 50px;
+  min-height: 50px;
+  width: 50px;
+  height: 50px;
+}
+body main #projects #currently-mining .mined-currencies .mined-currency p {
+  padding-top: 0.65rem;
+  padding-left: 1rem;
+  font-family: "Share Tech Mono";
+  color: #FFFFFF;
+  float: right;
+}
+@media screen and (max-width: 830px) {
+  body main #projects #currently-mining .mined-currencies .mined-currency {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  body main #projects #currently-mining .mined-currencies .mined-currency p {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  body main #projects #currently-mining .mined-currencies .mined-currency {
+    margin: 0 0.9rem;
+  }
+  body main #projects #currently-mining .mined-currencies .mined-currency p {
+    font-size: 0.5rem;
+  }
+}
+@media screen and (max-width: 830px) {
+  body main #projects #currently-mining {
+    top: 7.5rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  body main #projects #currently-mining {
+    top: 8.5rem;
+  }
+}
+body main #projects #map-tabs {
+  height: 260px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+body main #projects #map-tabs #map-container {
+  min-width: 1088px;
+  width: 1088px;
+  max-width: 1088px;
+  position: absolute;
+  margin: 0 auto;
+}
+body main #projects #map-tabs #map-container #map-legend {
+  display: none;
+}
+body main #projects #map-tabs #map-container .tabs {
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media screen and (max-width: 820px) {
+  body main #projects #map-tabs {
+    margin-top: 0px;
+    margin-bottom: -40px;
+    height: 160px;
+  }
+  body main #projects #map-tabs #map-container {
+    margin-top: 6rem;
+    min-width: 300px;
+    width: 544px;
+    max-width: 100%;
+  }
+}
+body main #projects .why {
+  display: block;
+  width: 100%;
+  margin-bottom: 100px;
+}
+body main #projects .why p {
+  color: white;
+  font-size: 1.1rem;
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 20px;
+  margin: 3rem auto;
+}
+@media screen and (max-width: 820px) {
+  body main #projects .why p {
+    font-size: 1rem;
+  }
+}
+body main #projects .why ul {
+  list-style: none;
+  padding: 0 0.5rem;
+}
+body main #projects .why ul li {
+  text-align: center;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 1rem 0;
+}
+body main #projects .why ul li:last-of-type {
+  border-bottom: 0;
+}
+body main #projects .sweden-development svg {
+  width: 100%;
+  max-width: 900px;
+  padding: 0 1.5rem;
+  margin: 2rem auto 0 auto;
+}
+body main #projects .iceland h3 {
+  padding: 0 20px;
+  font-size: 2rem;
+  color: #2d90fd;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+body main #projects .iceland p {
+  padding: 0 20px;
+  color: white;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  display: table;
+  width: 100%;
+  max-width: 900px;
+}
+body main #projects #overview-tab .maxWidth {
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1px;
+}
+body main #projects #overview-tab .headline {
+  grid-column: 1/3;
+}
+body main #projects #overview-tab .profitability {
+  border: solid 0.5px rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.2);
+}
+body main #projects #overview-tab .profitability .profitability-grid {
+  display: grid;
+  grid-template-columns: repeat(5, min-content);
+  grid-gap: 1rem;
+  margin: 0 auto;
+  padding: 3rem 0;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  font-size: 100%;
+}
+body main #projects #overview-tab .profitability .profitability-grid span {
+  font-size: 1.6rem;
+  color: white;
+  white-space: pre-wrap;
+  line-height: 2rem;
+}
+body main #projects #overview-tab .profitability .profitability-grid #params span {
+  display: block;
+  font-family: "Share Tech Mono", monospace;
+  font-style: normal;
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+body main #projects #overview-tab .profitability .profitability-grid #params span sup {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: white;
+}
+body main #projects #overview-tab .profitability .params-detail {
+  padding: 0 2rem 2rem 2rem;
+}
+body main #projects #overview-tab .profitability .params-detail sup {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 0.65rem;
+  color: rgba(255, 255, 255, 0.75);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+body main #projects #overview-tab .overview-info {
+  padding: 3rem 1rem 3rem 3rem;
+  color: white;
+}
+@media screen and (max-width: 1000px) {
+  body main #projects #overview-tab .profitability, body main #projects #overview-tab .overview-info {
+    grid-column: 1/3;
+  }
+  body main #projects #overview-tab .overview-info {
+    padding: 3rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  body main #projects #overview-tab .profitability {
+    background: none;
+    padding: 1rem 0;
+  }
+  body main #projects #overview-tab .profitability span {
+    font-size: 1.25rem;
+  }
+  body main #projects #overview-tab .profitability #params span {
+    font-size: 0.8rem;
+  }
+  body main #projects #overview-tab .overview-info {
+    padding: 2rem 1rem;
+  }
+}
+body main #projects .advantages {
+  height: 100%;
+  margin-bottom: 100px;
+  padding: 0 20px;
+}
+body main #projects .advantages .advantage {
+  width: calc(100% - 1rem);
+  height: auto;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 1rem 1rem 0 rgba(0, 0, 0, 0.25);
+  margin-bottom: 1rem;
+  position: relative;
+}
+body main #projects .advantages .advantage h3 {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white;
+  opacity: 1;
+  position: absolute;
+}
+body main #projects .advantages .advantage #genesis-hive {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+body main #projects .advantages .advantage #genesis-hive .img {
+  width: 40%;
+  height: 100%;
+  min-height: 100%;
+  max-height: unset;
+  display: table;
+  float: left;
+  position: relative;
+}
+body main #projects .advantages .advantage #genesis-hive .img img {
+  position: absolute;
+  min-width: 200px;
+  max-width: 250px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body main #projects .advantages .advantage #genesis-hive .desc {
+  display: table;
+  height: 100%;
+  width: 60%;
+  float: right;
+  padding: 2rem;
+}
+body main #projects .advantages .advantage #genesis-hive .desc p {
+  font-size: 1.1rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+body main #projects .advantages .advantage #genesis-hive .desc p:last-of-type {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 820px) {
+  body main #projects .advantages {
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+  body main #projects .advantages .advantage {
+    box-shadow: 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.25);
+    transform: translateX(-2.5px);
+    width: calc(100% - 30px);
+    margin: 0 auto;
+  }
+  body main #projects .advantages .advantage h3 {
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+  body main #projects .advantages .advantage #genesis-hive {
+    flex-direction: column;
+  }
+  body main #projects .advantages .advantage #genesis-hive .img {
+    width: 100%;
+  }
+  body main #projects .advantages .advantage #genesis-hive .img img {
+    width: 50%;
+    display: block;
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin: 5rem auto 1rem auto;
+  }
+  body main #projects .advantages .advantage #genesis-hive .desc {
+    width: 100%;
+    padding: 1rem;
+  }
+  body main #projects .advantages .advantage #genesis-hive .desc p {
+    font-size: 1rem;
+  }
+}
+body main #projects .pictures-caption {
+  padding: 0 10px;
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
+}
+body main #projects .pictures-caption .pictures {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 1px;
+}
+body main #projects .pictures-caption .pictures img:only-child {
+  grid-column: 1/3;
+}
+body main #projects .pictures-caption p {
+  padding: 1rem;
+  font-size: 0.8rem;
+  background: black;
+  width: 100%;
+  max-width: 900px;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+body main #investors #whyhive-tab, body main #investors #structure-tab, body main #investors #presentation-tab, body main #investors #reporting-tab, body main #investors #coverage-tab, body main #investors #faq-tab, body main #investors #filings-tab {
+  display: none;
+  opacity: 0;
+}
+body main #investors #structure-tab, body main #investors #presentation-tab, body main #investors #reporting-tab, body main #investors #coverage-tab, body main #investors #filings-tab {
+  padding: 5rem 20px;
+}
+body main #investors #structure-tab h3, body main #investors #presentation-tab h3, body main #investors #reporting-tab h3, body main #investors #coverage-tab h3, body main #investors #filings-tab h3 {
+  color: #5cc2ef;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  margin-left: 7px;
+}
+@media screen and (max-width: 820px) {
+  body main #investors #structure-tab h3, body main #investors #presentation-tab h3, body main #investors #reporting-tab h3, body main #investors #coverage-tab h3, body main #investors #filings-tab h3 {
+    font-size: 2rem;
+  }
+}
+body main #investors #news-items {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 60%;
+}
+body main #investors #news-items .news-item {
+  display: flex;
+  flex-direction: row;
+  min-width: 100%;
+  padding: 2rem 5px;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+body main #investors #news-items .news-item:last-child {
+  border-bottom: 0;
+}
+body main #investors #news-items .news-item .news-item-date {
+  min-width: 18rem;
+  float: left;
+}
+body main #investors #news-items .news-item .news-item-date h2 {
+  color: #FFFFFF;
+}
+body main #investors #news-items .news-item .news-item-date h3 {
+  color: #2D90FD;
+  font-size: 0.9rem;
+}
+body main #investors #news-items .news-item .news-item-content {
+  float: right;
+}
+body main #investors #news-items .news-item .news-item-content .news-item-title {
+  display: block;
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
+}
+body main #investors #news-items .news-item .news-item-content .download-pdf {
+  color: #FFFFFF;
+  font-size: 0.8rem;
+  padding-bottom: auto;
+}
+body main #investors #news-items .news-item .news-item-content .download-pdf:before {
+  content: "";
+  width: 26px;
+  height: 26px;
+  margin-right: 0.5rem;
+  display: block;
+  background-image: url("../fonts/icon-pdf.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  float: left;
+}
+@media screen and (max-width: 820px) {
+  body main #investors #news-items .news-item {
+    flex-direction: column;
+  }
+  body main #investors #news-items .news-item .news-item-date {
+    margin-bottom: 1.5rem;
+  }
+}
+body main #investors #news-items .news-item:nth-child(2) .news-item-title {
+  color: #93CED6;
+}
+@media screen and (max-width: 1800px) {
+  body main #investors #news-items {
+    max-width: 80%;
+  }
+}
+@media screen and (max-width: 820px) {
+  body main #investors #news-items {
+    flex-direction: column;
+    max-width: 90%;
+  }
+  body main #investors #news-items .news-item-date {
+    margin-bottom: 1.5rem;
+  }
+}
+body main #investors #quotations {
+  margin-top: 5rem;
+  background: white url("../fonts/bg-hive.svg") top right no-repeat;
+  padding: 2rem 20px;
+}
+body main #investors #quotations section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body main #investors #quotations section img {
+  width: 400px;
+}
+body main #investors #quotations section #quotes {
+  width: calc(100% - 400px);
+}
+body main #investors #quotations section #quotes hr {
+  margin: 0 2rem;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+body main #investors #quotations section #quotes .quote {
+  margin: 2rem;
+}
+body main #investors #quotations section #quotes .quote blockquote p {
+  font-size: 1.2rem;
+  max-width: 750px;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+body main #investors #quotations section #quotes .quote span {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #2d90fd;
+}
+@media screen and (max-width: 820px) {
+  body main #investors #quotations {
+    margin: 1rem 0;
+  }
+  body main #investors #quotations section {
+    flex-direction: column;
+  }
+  body main #investors #quotations section #quotes {
+    width: 100%;
+  }
+  body main #investors #quotations section #quotes hr {
+    margin: 2rem 1rem;
+  }
+  body main #investors #quotations section #quotes .quote {
+    margin: 1rem;
+  }
+  body main #investors #quotations section img {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+body main #investors #financials {
+  display: table;
+  height: auto;
+  width: 100%;
+}
+body main #investors #financials p {
+  color: white;
+  margin-top: -1rem;
+}
+body main #investors #financials ul#capital {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+body main #investors #financials ul#capital li {
+  width: calc(50% - 2px);
+  min-height: 100px;
+  height: auto;
+  float: left;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+body main #investors #financials ul#capital li span {
+  height: auto;
+}
+body main #investors #financials ul#capital li span.value {
+  width: auto;
+  order: 1;
+  color: white;
+  font-size: 2rem;
+  text-align: right;
+  white-space: nowrap;
+}
+body main #investors #financials ul#capital li span.value .footnote {
+  font-size: 0.5rem;
+  float: left;
+  color: white;
+  display: inline;
+  margin-left: 10px;
+  line-height: 3;
+  clear: right;
+}
+body main #investors #financials ul#capital li span.key {
+  width: auto;
+  font-size: 0.9rem;
+  color: #5cc2ef;
+  order: 0;
+}
+body main #investors #financials ul#capital li span.key span {
+  text-transform: uppercase;
+  color: inherit;
+  font-size: 0.7rem;
+}
+body main #investors #financials ul#capital li:first-of-type, body main #investors #financials ul#capital li:last-of-type {
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+body main #investors #financials ul#capital li:first-of-type span.value, body main #investors #financials ul#capital li:last-of-type span.value {
+  padding-bottom: 0.25rem;
+  font-size: 1.4rem;
+}
+@media screen and (max-width: 630px) {
+  body main #investors #financials ul#capital li:first-of-type .key, body main #investors #financials ul#capital li:last-of-type .key {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 650px) {
+  body main #investors #financials ul#capital li {
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+  body main #investors #financials ul#capital li span.value {
+    text-align: left;
+  }
+  body main #investors #financials ul#capital li:last-of-type span.value {
+    font-size: 1.1rem;
+  }
+}
+body main #investors #financials ol#financials-footnote {
+  display: table;
+  padding: 30px 0;
+  padding-left: 20px;
+}
+body main #investors #financials ol#financials-footnote li {
+  color: white;
+  font-size: 0.6rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  text-align: left;
+}
+body main #investors #financials ol#financials-footnote li p {
+  display: table;
+  color: white;
+  font-size: 0.6rem;
+  line-height: 1.5;
+  margin-bottom: 25px;
+  text-align: left;
+}
+body main #investors #financials ol#financials-footnote li p:last-of-type {
+  margin-bottom: 0;
+}
+body main #investors #reporting .table-row {
+  display: grid;
+  grid-template-columns: 1.5fr 3fr repeat(5, min-content);
+  grid-template-rows: 1fr;
+}
+body main #investors #reporting .table-row span {
+  max-width: none;
+}
+body main #investors #reporting .table-row span:before {
+  white-space: nowrap;
+}
+body main #investors #reporting .table-row span img {
+  width: 20px;
+  height: 20px;
+}
+body main #investors #reporting .table-row span a {
+  height: 20px;
+}
+body main #investors #reporting .reporting-date {
+  text-align: left;
+}
+body main #investors #reporting .reporting-date:before {
+  content: "Date";
+}
+body main #investors #reporting .reporting-q {
+  max-width: none;
+}
+body main #investors #reporting .reporting-q:before {
+  content: "Quarter";
+}
+body main #investors #reporting .reporting-financials {
+  text-align: center;
+}
+body main #investors #reporting .reporting-financials:before {
+  content: "Financials";
+}
+body main #investors #reporting .reporting-mda {
+  text-align: center;
+}
+body main #investors #reporting .reporting-mda:before {
+  content: "MD&A";
+}
+body main #investors #reporting .reporting-pr {
+  text-align: center;
+}
+body main #investors #reporting .reporting-pr:before {
+  content: "Press Release";
+}
+body main #investors #reporting .reporting-webcast {
+  text-align: center;
+}
+body main #investors #reporting .reporting-webcast:before {
+  content: "Webcast";
+}
+body main #investors #reporting .reporting-prepared {
+  text-align: center;
+}
+body main #investors #reporting .reporting-prepared:before {
+  content: "Prepared Remarks";
+}
+@media screen and (max-width: 1000px) {
+  body main #investors #reporting .table-row {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding: 0;
+  }
+  body main #investors #reporting .table-row .reporting-date {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+  body main #investors #reporting .table-row .reporting-q {
+    grid-column: 1/2;
+    grid-row: 3/5;
+  }
+  body main #investors #reporting .table-row .reporting-financials, body main #investors #reporting .table-row .reporting-mda, body main #investors #reporting .table-row .reporting-pr, body main #investors #reporting .table-row .reporting-webcast, body main #investors #reporting .table-row .reporting-prepared {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body main #investors #reporting .table-row .reporting-financials:before, body main #investors #reporting .table-row .reporting-mda:before, body main #investors #reporting .table-row .reporting-pr:before, body main #investors #reporting .table-row .reporting-webcast:before, body main #investors #reporting .table-row .reporting-prepared:before {
+    display: inline-block;
+  }
+  body main #investors #reporting .table-row .reporting-mda {
+    grid-row: 2/3;
+  }
+  body main #investors #reporting .table-row .reporting-pr {
+    grid-row: 3/4;
+  }
+  body main #investors #reporting .table-row .reporting-webcast {
+    grid-row: 4/5;
+  }
+  body main #investors #reporting .table-row .reporting-prepared {
+    grid-row: 5/6;
+  }
+  body main #investors #reporting .table-row > * {
+    padding: 0.25rem 0.5rem;
+    margin: 0;
+    text-align: left;
+    height: 100%;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.1);
+  }
+}
+body main #investors #presentation {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 800px) {
+  body main #investors #presentation iframe {
+    display: none;
+  }
+}
+body main #investors #presentation iframe {
+  width: 100%;
+  max-width: 1024px;
+  height: calc((100vw - 40px) * 0.75);
+  max-height: 768px;
+  border: 1px solid white;
+}
+body main #investors #presentation div {
+  text-align: center;
+  width: 100%;
+  padding: 3rem 0;
+}
+body main #investors #presentation div p {
+  color: white;
+  margin-bottom: 2rem;
+}
+body main #investors #presentation div button {
+  font-size: 0.9rem;
+  padding: 0.75rem;
+  border-radius: 4px;
+  border: 3px solid white;
+  color: white;
+  background: none;
+  background: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+@media screen and (max-width: 750px) {
+  body main #investors #presentation div button {
+    width: 100%;
+    top: auto;
+    right: 0;
+    transform: none;
+    position: relative;
+    margin-top: 1.5rem;
+  }
+}
+body main #investors #filings .table-row {
+  grid-template-columns: 1fr 50px;
+}
+body main #investors #filings .filing-title {
+  text-align: left;
+}
+body main #investors #filings .filing-title:before {
+  content: "Title";
+}
+body main #investors #filings .filing-file {
+  text-align: center;
+}
+body main #investors #filings .filing-file a {
+  height: 20px;
+}
+body main #investors #filings .filing-file a img {
+  height: 20px;
+}
+body main #investors #filings .filing-file:before {
+  content: "File";
+}
+body main #investors #coverage .coverage-firm:before {
+  content: "Firm";
+}
+body main #investors #coverage .coverage-analyst:before {
+  content: "Analyst";
+}
+body main #investors #coverage .coverage-phone:before {
+  content: "Phone";
+}
+body main #investors #coverage .coverage-email:before {
+  content: "Email";
+}
+body main #contact {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 820px) {
+  body main #contact {
+    margin-bottom: 0;
+  }
+}
+body main #contact #map {
+  background: url("../images/map.jpg") center center no-repeat;
+  background-size: cover;
+  height: 400px;
+  margin-top: 100px;
+}
+@media screen and (max-width: 820px) {
+  body main #contact #map {
+    height: 250px;
+  }
+}
+body main #contact #contact-info {
+  background: white;
+  width: 100%;
+  padding: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: top;
+  width: 100%;
+}
+body main #contact #contact-info .half {
+  width: 48%;
+}
+@media screen and (max-width: 820px) {
+  body main #contact #contact-info {
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body main #contact #contact-info .half {
+    width: 100%;
+  }
+  body main #contact #contact-info .half h3, body main #contact #contact-info .half span, body main #contact #contact-info .half p {
+    padding: 0 0.5rem;
+  }
+  body main #contact #contact-info .half #social {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 2rem;
+  }
+  body main #contact #contact-info .half #social div {
+    width: 100%;
+    margin: 1rem auto;
+    justify-content: center;
+  }
+}
+body main #blockchain-101 {
+  margin-bottom: 6rem;
+}
+@media screen and (min-width: 820px) {
+  body main #blockchain-101 {
+    margin-top: 6rem;
+  }
+}
+body main #blockchain-101 #blockchain-tab, body main #blockchain-101 #currencies-tab, body main #blockchain-101 #mining-tab, body main #blockchain-101 #comparing-tab, body main #blockchain-101 #web30-tab {
+  display: none;
+  margin-top: 6rem;
+}
+
+#popup-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+#popup-container #popup-window {
+  width: calc(100% - 100px);
+  max-width: 1000px;
+  height: auto;
+  position: relative;
+}
+#popup-container #popup-window #popup-content iframe {
+  width: 100%;
+  height: calc((100vw - 100px) / 1.7777777778);
+  max-height: 562.5px;
+}
+#popup-container #popup-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  background: white;
+  font-size: 2rem;
+  color: white;
+  z-index: 1100;
+  cursor: pointer;
+}
+#popup-container #popup-close img {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*# sourceMappingURL=main.css.map */
